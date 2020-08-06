@@ -1,7 +1,7 @@
 
-<div class="row" style="margin-top: 100px;">
+<div class="card-columns" style="margin-top: 100px;">
 
-    <div class="column column-50 column-offset-25" *ngFor="let pokemon of pokemones">
+    <div  *ngFor="let pokemon of pokemones">
           <img class="activator" src="{{pokemon.sprites.front_default}}" height="400" width="500"> 
           <h1>{{pokemon.nombre}}</h1>
       </div>

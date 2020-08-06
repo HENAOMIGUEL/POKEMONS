@@ -2,7 +2,7 @@
 
   <div style="margin-top: 10px;">
 
-    <select class="custom-select" id="combo" [(ngModel)]="pokeTipoSeleccionado" (change)="onChange($event.target.value,inputB.value)" >
+    <select class="custom-select" id="combo" [(ngModel)]="pokeTipoSeleccionado">
       <option *ngFor="let tipo of pokeTipos" value="{{tipo}}" >{{tipo}}</option>
     </select>
   
@@ -14,7 +14,7 @@
 
   <div style="margin-top: 10px;">
 
-    <input  type="text" class="form-control" #inputB (keyup)="buscarPokemones(inputB.value)">
+    <input  type="text" class="form-control" #inputB>
   
   </div>
   
